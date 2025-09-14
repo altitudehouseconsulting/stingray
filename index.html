@@ -3,166 +3,76 @@
 <head>
   <!-- 
     ==============================================================
-    Stingray SRQ — SEO-Optimized for Hurricane Prep & Property Care
+    Stingray SRQ — Hurricane Preparedness, Property Care & Disaster Recovery
     Service Area: Clearwater • Sarasota • Fort Myers
     --------------------------------------------------------------
     HOW TO USE:
-    - Update images with real photos of your work.
-    - Keep keywords consistent: "Hurricane Preparedness", "Disaster Recovery",
-      "Property Management", "Clearwater", "Sarasota", "Fort Myers".
-    - Alt text should describe both the service and location when possible.
+    - Replace placeholder images (recommended sizes in comments).
+    - Update contact info (search for TODO: CONTACT).
+    - Each service card links to a dedicated page for SEO.
+    - Blues/light blues are applied, using Inter font for readability.
     ==============================================================
   -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- ✅ SEO: Optimized Title (under 60 chars) -->
-  <title>Stingray SRQ – Hurricane Preparedness & Property Care Clearwater to Fort Myers</title>
+  <!-- ✅ SEO -->
+  <title>Stingray SRQ – Hurricane Preparedness, Property Care & Disaster Recovery Clearwater to Fort Myers</title>
+  <meta name="description" content="Stingray SRQ provides home watch, property investment monitoring, hurricane preparedness, disaster recovery, licensed contractor services, and permitting from Clearwater to Fort Myers." />
+  <meta name="keywords" content="Hurricane Preparedness Sarasota, Property Care Clearwater, Home Watch Fort Myers, Disaster Recovery Gulf Coast Florida, Licensed Contractors Sarasota County" />
 
-  <!-- ✅ SEO: Optimized Description (150–160 chars) -->
-  <meta name="description" content="Stingray SRQ provides hurricane preparedness, home watch, disaster recovery, and licensed contractor services across Clearwater, Sarasota, and Fort Myers." />
-
-  <!-- ✅ SEO: Location keywords for indexing -->
-  <meta name="keywords" content="Hurricane Preparedness Sarasota, Property Care Clearwater, Home Watch Fort Myers, Disaster Recovery Florida Gulf Coast, Licensed Contractors Sarasota County" />
-
-  <!-- ✅ Open Graph for social sharing -->
-  <meta property="og:title" content="Stingray SRQ – Hurricane Preparedness & Property Care Clearwater to Fort Myers" />
-  <meta property="og:description" content="Trusted home watch, property care, and disaster recovery services from Clearwater to Fort Myers." />
+  <!-- ✅ Social Sharing -->
+  <meta property="og:title" content="Stingray SRQ – Hurricane Preparedness & Property Care" />
+  <meta property="og:description" content="Trusted home watch, property care, and disaster recovery services across Clearwater, Sarasota, and Fort Myers." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://stingraysrq.com" />
-  <meta property="og:image" content="https://stingraysrq.com/your-hero-image.jpg" /> <!-- TODO: Replace with hero image URL -->
+  <meta property="og:image" content="https://stingraysrq.com/hero-image.jpg" /> <!-- TODO: Replace with your hero image -->
 
-  <!-- ✅ Favicon (optional) -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <!-- ✅ Google Font: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* (CSS unchanged from prior draft, not repeated here for brevity) */
-  </style>
-</head>
-<body>
-  <!-- ===== Hero Section ===== -->
-  <section class="hero" id="top">
-    <div class="container content">
-      <span class="eyebrow">Serving Clearwater • Sarasota • Fort Myers</span>
-      <!-- ✅ SEO: Primary keyword in H1 -->
-      <h1>Hurricane Preparedness & Disaster Recovery for Florida’s Gulf Coast Homes</h1>
-      <!-- ✅ SEO: Include location + services in lead paragraph -->
-      <p class="lead">From Clearwater to Fort Myers, Stingray SRQ protects your home with storm preparation, insurance documentation, licensed contractors, and full disaster recovery services.</p>
-      <div style="margin-top:1.2rem;">
-        <!-- TODO: CONTACT update -->
-        <a class="btn btn-primary" href="tel:5551234567">Call Now</a>
-        <a class="btn btn-outline" href="mailto:info@stingraysrq.com">Email Us</a>
-      </div>
-    </div>
-  </section>
+    :root {
+      /* === Brand Blues === */
+      --brand-900:#0b1f4a;   /* deep navy */
+      --brand-700:#1e3a8a;   /* indigo/navy */
+      --brand-600:#2563eb;   /* royal blue */
+      --brand-400:#60a5fa;   /* sky blue */
+      --brand-200:#e0f2fe;   /* powder blue background */
+      --ink-900:#0f172a;     /* text dark */
+      --ink-600:#475569;     /* text medium */
+      --ink-300:#cbd5e1;     /* subtle lines */
+      --bg:#f8fafc;          /* page background */
+      --radius-xl:18px;
+      --radius-lg:14px;
+      --shadow-md:0 10px 20px rgba(2,6,23,0.10);
+      --shadow-lg:0 12px 24px rgba(37,99,235,0.15);
+      --container:1180px;
+    }
 
-<!-- ===== Services Section ===== -->
-<section id="services" aria-labelledby="services-h">
-  <div class="container">
-    <span class="tag">What we do</span>
-    <h2 id="services-h">Property Care & Hurricane Services — Clearwater to Fort Myers</h2>
-    <p class="sub">Explore our full range of services. Click a card to learn more about each offering.</p>
+    /* === Base === */
+    body {
+      margin:0;
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: var(--bg);
+      color: var(--ink-900);
+      line-height:1.7;
+      font-size: 1rem;
+    }
+    img { max-width:100%; display:block; border-radius: var(--radius-lg); }
+    .container { width:92%; max-width: var(--container); margin-inline:auto; }
+    a { color: var(--brand-600); text-decoration:none; }
+    a:hover { text-decoration:underline; }
 
-    <div class="services" role="list">
+    /* === Buttons === */
+    .btn { display:inline-flex; align-items:center; padding:.9rem 1.2rem; border-radius:999px; font-weight:600; }
+    .btn-primary { background: linear-gradient(135deg, var(--brand-600), var(--brand-400)); color:#fff; box-shadow: var(--shadow-md); }
+    .btn-outline { border:1.5px solid var(--brand-300); color: var(--brand-700); background:#fff; }
 
-      <!-- Home Watch -->
-      <a href="service-home-watch.html" class="card" role="listitem">
-        <!-- TODO: Replace image with real photo (600px wide min) -->
-        <div class="media">
-          <img src="https://placehold.co/600x400" alt="Home watch inspection service in Sarasota County" />
-        </div>
-        <div class="body">
-          <span class="pill">Home Watch</span>
-          <h3>Home Watch Programs</h3>
-          <p>Routine inspections, utility checks, and detailed reporting for seasonal and absentee owners.</p>
-        </div>
-      </a>
+    /* === Header === */
+    header { background:#fff; border-bottom:1px solid var(--ink-200); position:sticky; top:0; z-index:100; }
+    .nav { display:flex; justify-content:space-between; align-items:center; padding:1rem 0; }
+    .brand { display:flex; gap:.8rem; align-items:center; font-weight:800; color:var(--brand-700); font-size:1.2rem; }
 
-      <!-- Investment Monitoring -->
-      <a href="service-investment-monitoring.html" class="card" role="listitem">
-        <div class="media">
-          <img src="https://placehold.co/600x400" alt="Investment property monitoring dashboard in Clearwater Florida" />
-        </div>
-        <div class="body">
-          <span class="pill">Investments</span>
-          <h3>Home Investment Monitoring</h3>
-          <p>ROI tracking, rental performance insights, and maintenance oversight to protect your property value.</p>
-        </div>
-      </a>
-
-      <!-- Hurricane Preparedness -->
-      <a href="service-hurricane-preparedness.html" class="card" role="listitem">
-        <div class="media">
-          <img src="https://placehold.co/600x400" alt="Hurricane shutters installation in Fort Myers Florida" />
-        </div>
-        <div class="body">
-          <span class="pill">Storm Prep</span>
-          <h3>Hurricane Preparedness</h3>
-          <p>Pre-storm documentation, shutter installation, and post-storm assessments for insurance support.</p>
-        </div>
-      </a>
-
-      <!-- Disaster Recovery -->
-      <a href="service-disaster-recovery.html" class="card" role="listitem">
-        <div class="media">
-          <img src="https://placehold.co/600x400" alt="Roof repair and disaster recovery in Sarasota after hurricane" />
-        </div>
-        <div class="body">
-          <span class="pill">Recovery</span>
-          <h3>Disaster Recovery</h3>
-          <p>From water mitigation to rebuild, we handle full restoration and coordinate insurance claims.</p>
-        </div>
-      </a>
-
-      <!-- Licensed Contractors -->
-      <a href="service-contractors.html" class="card" role="listitem">
-        <div class="media">
-          <img src="https://placehold.co/600x400" alt="Licensed contractor providing electrical repairs in Clearwater home" />
-        </div>
-        <div class="body">
-          <span class="pill">Contractors</span>
-          <h3>Licensed Contractor Services</h3>
-          <p>Plumbing, electrical, roofing, and renovations — all managed by vetted, licensed professionals.</p>
-        </div>
-      </a>
-
-      <!-- Permitting -->
-      <a href="service-permitting.html" class="card" role="listitem">
-        <div class="media">
-          <img src="https://placehold.co/600x400" alt="Building permits and compliance paperwork in Sarasota County" />
-        </div>
-        <div class="body">
-          <span class="pill">Permitting</span>
-          <h3>Permitting & Compliance</h3>
-          <p>We prepare permits, coordinate inspections, and ensure Florida Building Code compliance.</p>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-
-  <!-- ===== Footer ===== -->
-  <footer>
-    <div class="container footer-grid">
-      <div>
-        <strong>Stingray SRQ</strong><br />
-        <small>Hurricane Preparedness • Property Care • Disaster Recovery</small><br />
-        <!-- ✅ SEO: Service area explicitly listed -->
-        <small>Serving Clearwater, Sarasota, Venice, Port Charlotte, and Fort Myers • © <span id="year"></span></small>
-      </div>
-      <div class="socials">
-        <!-- TODO: CONTACT update social links -->
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+    /* === Hero === */
+    .hero { position:relative
