@@ -3,32 +3,40 @@
 <head>
   <!-- 
     =====================================================================
-    Stingray SRQ – Hurricane Preparedness, Property Care & Disaster Recovery Clearwater to Fort Myers
+    Stingray SRQ – Property Care, Hurricane Preparedness & Disaster Recovery (Clearwater to Fort Myers)
     ---------------------------------------------------------------------
-    • Edit TITLE & DESCRIPTION for SEO.
-    • Replace og:image with your hosted hero image for rich social cards.
-    • Canonical URL points to live domain (change if needed).
+    SEO CHECKLIST (edit as needed):
+    • Title under ~60 chars, includes service + locations where relevant.
+    • Meta description 150–160 chars; mirrors service & service area.
+    • Canonical tag points at production URL to avoid duplicates.
+    • Social (og:*) tags help rich share cards.
+    • LocalBusiness schema provides structured data to search engines.
     =====================================================================
   -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Stingray SRQ – Hurricane Preparedness, Property Care & Disaster Recovery Clearwater to Fort Myers</title>
-  <meta name="description" content="Home watch, investment monitoring, hurricane preparedness, disaster recovery, licensed contractor services, and permitting from Clearwater to Fort Myers." />
+  <!-- ✅ SEO: Page Title & Description -->
+  <title>Stingray SRQ – Property Care, Hurricane Preparedness & Disaster Recovery (Clearwater to Fort Myers)</title>
+  <meta name="description" content="Full-service property care: home watch, investment monitoring, hurricane preparedness, disaster recovery, contractors, permitting, remodeling, landscaping, painting, handyman, modular repairs." />
 
-  <meta property="og:title" content="Stingray SRQ – Hurricane Preparedness, Property Care & Disaster Recovery Clearwater to Fort Myers" />
-  <meta property="og:description" content="Home watch, investment monitoring, hurricane preparedness, disaster recovery, licensed contractor services, and permitting from Clearwater to Fort Myers." />
+  <!-- ✅ Social / Open Graph -->
+  <meta property="og:title" content="Stingray SRQ – Property Care, Hurricane Preparedness & Disaster Recovery (Clearwater to Fort Myers)" />
+  <meta property="og:description" content="Full-service property care: home watch, investment monitoring, hurricane preparedness, disaster recovery, contractors, permitting, remodeling, landscaping, painting, handyman, modular repairs." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://stingraysrq.com/" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600&auto=format&fit=crop" />
 
+  <!-- ✅ Canonical URL -->
   <link rel="canonical" href="https://stingraysrq.com/" />
 
-  <!-- Inter font for readability -->
+  <!-- ✅ Google Font: Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- ✅ Shared CSS -->
   <link rel="stylesheet" href="assets/css/styles.css" />
 
-  <!-- LocalBusiness structured data (update phone/email) -->
+  <!-- ✅ Structured Data: LocalBusiness -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -43,14 +51,13 @@
     "Port Charlotte",
     "Fort Myers"
   ],
-  "description": "Home watch, investment monitoring, hurricane preparedness, disaster recovery, licensed contractor services, and permitting from Clearwater to Fort Myers.",
+  "description": "Full-service property care: home watch, investment monitoring, hurricane preparedness, disaster recovery, contractors, permitting, remodeling, landscaping, painting, handyman, modular repairs.",
   "image": "https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600&auto=format&fit=crop"
 }
   </script>
 
+  <!-- ✅ Page-specific hero image override (use 1600px+ wide image) -->
   <style>
-    /* Override the default hero image with a page-specific one.
-       ✅ Replace with a real, 1600px+ wide landscape image for best results. */
     .hero::before {
       background-image:
         linear-gradient(180deg, rgba(11,31,74,.7), rgba(11,31,74,.3)),
@@ -62,6 +69,7 @@
   <!-- ===== Header ===== -->
   <header>
     <div class="container nav">
+      <!-- TODO: Replace text with your logo image if preferred -->
       <a class="brand" href="index.html">Stingray SRQ</a>
       <nav>
         <a href="index.html#services">Services</a>
@@ -73,9 +81,10 @@
   <!-- ===== Hero ===== -->
   <section class="hero">
     <div class="container content">
-      <span class="eyebrow">Serving Clearwater • Sarasota • Fort Myers</span>
+      <!-- ✅ H1 should include service/location keywords -->
       <h1>Hurricane Preparedness & Property Care for Florida’s Gulf Coast</h1>
-      <p class="lead">From home watch and investment monitoring to storm prep, disaster recovery, and permitting — we protect your home and your insurance from Clearwater to Fort Myers.</p>
+      <!-- ✅ Lead: concise explanation with service area mention -->
+      <p class="lead">From home watch to storm recovery and renovations, we protect your property and insurance from Clearwater to Fort Myers — with photos and clear documentation at every step.</p>
     </div>
   </section>
 
@@ -86,87 +95,343 @@
     <h2 id="services-h">Property Care & Hurricane Services — Clearwater to Fort Myers</h2>
     <p class="sub">Click a card to learn more. Each service page is SEO-targeted and includes insurance-ready documentation details.</p>
     <div class="services-grid">
+      
+<a href="service-home-watch.html" class="card">
+  <div class="media">
+    <!-- TODO: Replace placeholder with a real project photo (≥600×400). 
+         Prefer JPG/WEBP compressed for performance. -->
+    <img src="https://placehold.co/600x400?text=Home+Watch+Programs" alt="Home watch inspection in Sarasota County" />
+  </div>
+  <div class="body">
+    <span class="pill">Service</span>
+    <h3>Home Watch Programs</h3>
+    <p>Routine inspections, utility checks, and detailed reports for seasonal and absentee owners.</p>
+  </div>
+</a>
 
-      <a href="service-home-watch.html" class="card">
-        <div class="media">
-          <!-- TODO: Replace with a real image (min 600x400). Use compressed JPG/WEBP. -->
-          <img src="https://placehold.co/600x400" alt="Home watch inspection in Sarasota County" />
-        </div>
-        <div class="body">
-          <span class="pill">Home Watch</span>
-          <h3>Home Watch Programs</h3>
-          <p>Routine inspections, utility checks, and detailed reports for seasonal and absentee owners.</p>
-        </div>
-      </a>
 
-      <a href="service-investment-monitoring.html" class="card">
-        <div class="media">
-          <img src="https://placehold.co/600x400" alt="Investment monitoring dashboard Clearwater Florida" />
-        </div>
-        <div class="body">
-          <span class="pill">Investments</span>
-          <h3>Home Investment Monitoring</h3>
-          <p>ROI tracking, rental performance insights, and preventative maintenance oversight.</p>
-        </div>
-      </a>
+<a href="service-investment-monitoring.html" class="card">
+  <div class="media">
+    <!-- TODO: Replace placeholder with a real project photo (≥600×400). 
+         Prefer JPG/WEBP compressed for performance. -->
+    <img src="https://placehold.co/600x400?text=Home+Investment+Monitoring" alt="Investment monitoring dashboard Clearwater Florida" />
+  </div>
+  <div class="body">
+    <span class="pill">Service</span>
+    <h3>Home Investment Monitoring</h3>
+    <p>ROI tracking, rental performance insights, and preventative maintenance oversight.</p>
+  </div>
+</a>
 
-      <a href="service-hurricane-preparedness.html" class="card">
-        <div class="media">
-          <img src="https://placehold.co/600x400" alt="Hurricane shutters installation Fort Myers" />
-        </div>
-        <div class="body">
-          <span class="pill">Storm Prep</span>
-          <h3>Hurricane Preparedness</h3>
-          <p>Pre-storm documentation, shutter installation, and post-storm assessments for insurance support.</p>
-        </div>
-      </a>
 
-      <a href="service-disaster-recovery.html" class="card">
-        <div class="media">
-          <img src="https://placehold.co/600x400" alt="Roof repair and disaster recovery Sarasota Florida" />
-        </div>
-        <div class="body">
-          <span class="pill">Recovery</span>
-          <h3>Disaster Recovery</h3>
-          <p>From water mitigation to full rebuild, we coordinate contractors and claims for complete restoration.</p>
-        </div>
-      </a>
+<a href="service-hurricane-preparedness.html" class="card">
+  <div class="media">
+    <!-- TODO: Replace placeholder with a real project photo (≥600×400). 
+         Prefer JPG/WEBP compressed for performance. -->
+    <img src="https://placehold.co/600x400?text=Hurricane+Preparedness" alt="Hurricane shutters installation Fort Myers" />
+  </div>
+  <div class="body">
+    <span class="pill">Service</span>
+    <h3>Hurricane Preparedness</h3>
+    <p>Pre-storm documentation, shutter installation, and post-storm assessments for insurance support.</p>
+  </div>
+</a>
 
-      <a href="service-contractors.html" class="card">
-        <div class="media">
-          <img src="https://placehold.co/600x400" alt="Licensed contractor repairs in Clearwater" />
-        </div>
-        <div class="body">
-          <span class="pill">Contractors</span>
-          <h3>Licensed Contractor Services</h3>
-          <p>Plumbing, electrical, roofing, and renovations — vetted, licensed professionals.</p>
-        </div>
-      </a>
 
-      <a href="service-permitting.html" class="card">
-        <div class="media">
-          <img src="https://placehold.co/600x400" alt="Permit documents and compliance Sarasota County" />
-        </div>
-        <div class="body">
-          <span class="pill">Permitting</span>
-          <h3>Permitting & Compliance</h3>
-          <p>We handle permits, inspections, and Florida Building Code compliance.</p>
-        </div>
-      </a>
+<a href="service-disaster-recovery.html" class="card">
+  <div class="media">
+    <!-- TODO: Replace placeholder with a real project photo (≥600×400). 
+         Prefer JPG/WEBP compressed for performance. -->
+    <img src="https://placehold.co/600x400?text=Disaster+Recovery" alt="Roof repair and disaster recovery Sarasota Florida" />
+  </div>
+  <div class="body">
+    <span class="pill">Service</span>
+    <h3>Disaster Recovery</h3>
+    <p>From water mitigation to full rebuild, we coordinate contractors and claims for complete restoration.</p>
+  </div>
+</a>
+
+
+<a href="service-contractors.html" class="card">
+  <div class="media">
+    <!-- TODO: Replace placeholder with a real project photo (≥600×400). 
+         Prefer JPG/WEBP compressed for performance. -->
+    <img src="https://placehold.co/600x400?text=Licensed+Contractor+Services" alt="Licensed contractor repairs in Clearwater" />
+  </div>
+  <div class="body">
+    <span class="pill">Service</span>
+    <h3>Licensed Contractor Services</h3>
+    <p>Plumbing, electrical, roofing, and renovations — vetted, licensed professionals.</p>
+  </div>
+</a>
+
+
+<a href="service-permitting.html" class="card">
+  <div class="media">
+    <!-- TODO: Replace placeholder with a real project photo (≥600×400). 
+         Prefer JPG/WEBP compressed for performance. -->
+    <img src="https://placehold.co/600x400?text=Permitting+&+Compliance" alt="Permit documents and compliance Sarasota County" />
+  </div>
+  <div class="body">
+    <span class="pill">Service</span>
+    <h3>Permitting & Compliance</h3>
+    <p>We handle permits, inspections, and Florida Building Code compliance.</p>
+  </div>
+</a>
+
+
+<a href="service-renovations.html" class="card">
+  <div class="media">
+    <!-- TODO: Replace placeholder with a real project photo (≥600×400). 
+         Prefer JPG/WEBP compressed for performance. -->
+    <img src="https://placehold.co/600x400?text=Renovations+&+Remodeling" alt="Kitchen and bath remodeling Sarasota example" />
+  </div>
+  <div class="body">
+    <span class="pill">Service</span>
+    <h3>Renovations & Remodeling</h3>
+    <p>Kitchen, bath, flooring, and additions with full oversight.</p>
+  </div>
+</a>
+
+
+<a href="service-landscaping.html" class="card">
+  <div class="media">
+    <!-- TODO: Replace placeholder with a real project photo (≥600×400). 
+         Prefer JPG/WEBP compressed for performance. -->
+    <img src="https://placehold.co/600x400?text=Landscaping+Services" alt="Landscaping project in Venice, FL" />
+  </div>
+  <div class="body">
+    <span class="pill">Service</span>
+    <h3>Landscaping Services</h3>
+    <p>Lawn care, trimming, hardscape installs, and storm cleanup.</p>
+  </div>
+</a>
+
+
+<a href="service-painting.html" class="card">
+  <div class="media">
+    <!-- TODO: Replace placeholder with a real project photo (≥600×400). 
+         Prefer JPG/WEBP compressed for performance. -->
+    <img src="https://placehold.co/600x400?text=Interior+&+Exterior+Painting" alt="Exterior painting project Fort Myers" />
+  </div>
+  <div class="body">
+    <span class="pill">Service</span>
+    <h3>Interior & Exterior Painting</h3>
+    <p>Professional prep, prime, and paint for homes and small commercial.</p>
+  </div>
+</a>
+
+
+<a href="service-handyman.html" class="card">
+  <div class="media">
+    <!-- TODO: Replace placeholder with a real project photo (≥600×400). 
+         Prefer JPG/WEBP compressed for performance. -->
+    <img src="https://placehold.co/600x400?text=Handyman+Services" alt="Handyman services in Clearwater" />
+  </div>
+  <div class="body">
+    <span class="pill">Service</span>
+    <h3>Handyman Services</h3>
+    <p>Minor repairs, fixtures, drywall, and assemblies done right.</p>
+  </div>
+</a>
+
+
+<a href="service-modular.html" class="card">
+  <div class="media">
+    <!-- TODO: Replace placeholder with a real project photo (≥600×400). 
+         Prefer JPG/WEBP compressed for performance. -->
+    <img src="https://placehold.co/600x400?text=Modular+Home+Repairs" alt="Modular home repairs Gulf Coast" />
+  </div>
+  <div class="body">
+    <span class="pill">Service</span>
+    <h3>Modular Home Repairs</h3>
+    <p>Skirting, leveling, hurricane straps, and water damage fixes.</p>
+  </div>
+</a>
 
     </div>
   </div>
 </section>
 
-<section id="contact" class="cta" aria-labelledby="contact-h">
+<!-- ===== Before/After Slider (Demo) =====
+     HOW TO USE:
+     • Replace the two placeholder images below with your own (800–1200px wide).
+     • Update alt text with a location-aware description for SEO.
+-->
+<section id="before-after">
   <div class="container">
-    <h2 id="contact-h">Ready to protect your property?</h2>
-    <p class="sub">Serving Clearwater, Sarasota, Venice, Port Charlotte, and Fort Myers. Call or email today.</p>
-    <div style="margin-top:.8rem;">
-      <!-- TODO: CONTACT update -->
-      <a class="btn btn-primary" href="tel:5551234567">Call/Text: (555) 123-4567</a>
-      <a class="btn btn-outline" href="mailto:info@stingraysrq.com">Email: info@stingraysrq.com</a>
+    <h2>Before & After – Hurricane Repair Example</h2>
+    <p class="sub">Slide the handle to compare pre- and post-repair conditions. Replace images with your own projects.</p>
+    <div class="ba-box" style="position:relative; overflow:hidden; border:1px solid var(--ink-300); border-radius:12px; max-width:900px; margin:auto; box-shadow:var(--shadow-md);">
+      <img src="https://placehold.co/900x520?text=Before" alt="Before roof repair in Sarasota" style="width:100%; display:block;">
+      <img src="https://placehold.co/900x520?text=After" alt="After roof repair in Sarasota" style="width:100%; display:block; position:absolute; top:0; left:0; clip-path: inset(0 0 0 50%); transition:clip-path .2s;" id="afterImg">
+      <input type="range" min="0" max="100" value="50" style="width:100%; position:absolute; bottom:10px;" id="baRange" aria-label="Reveal after image">
     </div>
+  </div>
+</section>
+<script>
+  // Basic before/after slider logic (no dependencies)
+  const baRange = document.getElementById('baRange');
+  const afterImg = document.getElementById('afterImg');
+  if (baRange && afterImg) { baRange.addEventListener('input', () => { afterImg.style.clipPath = `inset(0 0 0 ${100 - baRange.value}%)`; }); }
+</script>
+
+<!-- ===== Filterable Gallery =====
+     HOW TO USE:
+     • Replace <img> src with your project photos (400–600px wide).
+     • Add/remove categories by changing data-cat values and buttons.
+-->
+<section id="gallery">
+  <div class="container">
+    <h2>Project Gallery</h2>
+    <p class="sub">Browse examples of our work. Filter by category to see specific service types.</p>
+
+    <!-- Filter Buttons -->
+    <div class="filters" style="margin-bottom:1rem;">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="interior">Interior</button>
+      <button class="filter-btn" data-filter="exterior">Exterior</button>
+      <button class="filter-btn" data-filter="landscaping">Landscaping</button>
+      <button class="filter-btn" data-filter="painting">Painting</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(250px, 1fr)); gap:1rem;" id="galleryGrid">
+      <figure data-cat="interior">
+        <img src="https://placehold.co/400x300?text=Interior+Project" alt="Interior renovation example in Sarasota">
+        <figcaption>Interior remodel – Sarasota</figcaption>
+      </figure>
+      <figure data-cat="exterior">
+        <img src="https://placehold.co/400x300?text=Exterior+Project" alt="Exterior siding repair in Clearwater">
+        <figcaption>Exterior siding repair – Clearwater</figcaption>
+      </figure>
+      <figure data-cat="landscaping">
+        <img src="https://placehold.co/400x300?text=Landscaping" alt="Landscaping project in Venice">
+        <figcaption>Landscaping project – Venice</figcaption>
+      </figure>
+      <figure data-cat="painting">
+        <img src="https://placehold.co/400x300?text=Painting" alt="Exterior painting project in Fort Myers">
+        <figcaption>Exterior painting – Fort Myers</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Simple filter logic for gallery
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const galleryItems = document.querySelectorAll('#galleryGrid figure');
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter;
+      filterButtons.forEach(b => { b.style.background=''; b.style.color=''; });
+      btn.style.background = '#2563eb'; btn.style.color='#fff';
+      galleryItems.forEach(item => {
+        item.style.display = (filter === 'all' || item.dataset.cat === filter) ? '' : 'none';
+      });
+    });
+  });
+</script>
+
+<!-- ===== Testimonials =====
+     HOW TO USE:
+     • Replace quotes, names, and roles/locations below.
+     • Use 60–80px circular avatar photos or initials if needed.
+-->
+<section id="testimonials">
+  <div class="container">
+    <h2>What Our Clients Say</h2>
+    <p class="sub">Real feedback from homeowners and investors along Florida’s Gulf Coast.</p>
+
+    <div class="testimonials" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(280px,1fr)); gap:1rem; margin-top:1.5rem;">
+      <figure class="quote" style="background:#fff; padding:1rem; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.08);">
+        <p>“Stingray SRQ helped us prepare before a hurricane and documented everything for insurance. Huge peace of mind.”</p>
+        <figcaption class="avatar" style="display:flex; align-items:center; gap:.6rem; margin-top:.8rem;">
+          <img src="https://placehold.co/60x60" alt="Client photo" style="border-radius:50%;">
+          <div><strong>Sarah L.</strong><br><small>Sarasota Homeowner</small></div>
+        </figcaption>
+      </figure>
+
+      <figure class="quote" style="background:#fff; padding:1rem; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.08);">
+        <p>“They coordinated contractors for a full remodel in Clearwater. Finished on time and under budget.”</p>
+        <figcaption class="avatar" style="display:flex; align-items:center; gap:.6rem; margin-top:.8rem;">
+          <img src="https://placehold.co/60x60" alt="Client photo" style="border-radius:50%;">
+          <div><strong>Michael D.</strong><br><small>Clearwater Investor</small></div>
+        </figcaption>
+      </figure>
+
+      <figure class="quote" style="background:#fff; padding:1rem; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.08);">
+        <p>“Quick response after storm damage in Fort Myers. They handled insurance paperwork and repairs.”</p>
+        <figcaption class="avatar" style="display:flex; align-items:center; gap:.6rem; margin-top:.8rem;">
+          <img src="https://placehold.co/60x60" alt="Client photo" style="border-radius:50%;">
+          <div><strong>Angela R.</strong><br><small>Fort Myers Resident</small></div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact Form (Front-end) =====
+     HOW TO USE:
+     • If hosting on GitHub Pages or Netlify: use Formspree (replace YOUR_FORM_ID).
+     • If hosting on Bluehost/cPanel: point action to a PHP mail handler (see README).
+     • Inputs use built-in HTML validation (required, type="email"/"tel").
+-->
+<section id="contact-form">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <!-- NAME -->
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Your full name" required>
+      <!-- EMAIL -->
+      <label for="email">Email</label>
+      <input id="email" name="_replyto" type="email" placeholder="you@example.com" required>
+      <!-- PHONE -->
+      <label for="phone">Phone <small>(optional)</small></label>
+      <input id="phone" name="phone" type="tel" placeholder="(555) 123-4567">
+      <!-- MESSAGE -->
+      <label for="message">How can we help?</label>
+      <textarea id="message" name="message" rows="6" placeholder="Tell us about your property or project..." required></textarea>
+
+      <!-- Anti-bot field (optional, Formspree honeypot) -->
+      <input type="text" name="_gotcha" style="display:none">
+      <!-- Redirect after success (optional) -->
+      <input type="hidden" name="_next" value="https://stingraysrq.com/thank-you.html">
+
+      <button type="submit" class="btn btn-primary" aria-label="Send message">Send Message</button>
+    </form>
+    <p class="sub"><small>⚡ Tip: Replace the <code>action</code> URL with your Formspree ID, Netlify Forms endpoint, or a PHP mail script on Bluehost. See README for steps.</small></p>
+  </div>
+</section>
+
+<!-- ===== Google Reviews =====
+     HOW TO USE:
+     • Replace YOUR_PLACE_ID with your Google Business Profile Place ID.
+     • Find your Place ID here: https://developers.google.com/maps/documentation/places/web-service/place-id
+-->
+<section id="reviews">
+  <div class="container">
+    <h2>What Clients Say on Google</h2>
+    <p class="sub">We’re proud of our reputation. Share your experience or see what others say.</p>
+    <a class="btn btn-outline" href="https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID" target="_blank" rel="noopener">Leave a Google Review</a>
+    <!-- Optional: embed a third-party reviews widget below -->
+  </div>
+</section>
+
+<!-- ===== Availability Calendar (Google Calendar Embed) =====
+     HOW TO USE:
+     • Create or choose a Google Calendar → Settings → Access permissions → "Make available to public".
+     • Copy the Embed code → Replace YOUR_CALENDAR_ID below (usually your calendar email).
+-->
+<section id="calendar">
+  <div class="container">
+    <h2>Availability Calendar</h2>
+    <iframe 
+      src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America/New_York"
+      style="border:0; width:100%; height:600px;" frameborder="0" scrolling="no"
+      title="Stingray SRQ Availability Calendar"></iframe>
+    <p class="sub"><small>⚡ Note: You can create a dedicated availability calendar to keep personal events separate.</small></p>
   </div>
 </section>
 
@@ -180,13 +445,14 @@
         <small>Serving Clearwater, Sarasota, Venice, Port Charlotte, and Fort Myers • © <span id="year"></span></small>
       </div>
       <div>
-        <!-- TODO: CONTACT update -->
+        <!-- TODO: CONTACT update with real social links -->
         <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
       </div>
     </div>
   </footer>
 
   <script>
+    // Dynamic year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
