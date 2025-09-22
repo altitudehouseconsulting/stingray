@@ -5,14 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Stingray Home Solutions – Property Care, Renovation & Emergency Restoration Services in Southwest Florida</title>
   <meta name="description" content="Home watch, investment monitoring, emergency services, remodeling, painting, handyman, and more." />
+
+  <!--
+    REQUIRED IMAGE: Open Graph (social preview)
+    • Size: 1200×630 (1.91:1), JPG/WebP, ≤ 300 KB
+    • Use ABSOLUTE URL
+    • Path suggestion: /assets/images/og/og-1200x630.jpg
+  -->
   <meta property="og:title" content="Stingray Home Solutions – Property Care, Painting, Renovation & Emergency Services" />
   <meta property="og:description" content="Hurricane preparedness, disaster recovery, emergency services, remodeling, painting, handyman, and more." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://stingraysrq.com/" />
-  <meta property="og:image" content="assets/images/Logo.jpg" />
+  <meta property="og:image" content="https://stingraysrq.com/assets/images/og/og-1200x630.jpg" />
+
   <link rel="canonical" href="https://stingraysrq.com/" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!--
+    JSON-LD: 'image' should also be an ABSOLUTE URL
+    • For a business logo or hero photo:
+      - Logo recommended: transparent PNG, ~512×512 (square)
+      - Or use a landscape hero: 1600×900 WebP/JPG
+  -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -29,12 +44,21 @@
     "Fort Myers"
   ],
   "description": "Emergency services, remodeling, painting, handyman, and more from Clearwater to Fort Myers.",
-  "image": "https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600&auto=format&fit=crop"
+  "image": "https://stingraysrq.com/assets/images/og/og-1200x630.jpg"
 }
   </script>
+
   <style>
+    /* 
+      HERO BACKGROUND IMAGE (pseudo-element)
+      • Visual target: 16:9 banner, desktop displays up to ~1920px wide
+      • Provide 1600 and 1920 variants (WebP/JPG) via CSS variable; actual CSS may switch by media queries if desired
+      • File suggestions:
+        /assets/images/hero/hero-1600.jpg
+        /assets/images/hero/hero-1920.jpg
+    */
     .hero::before {
-      --hero-image: url('https://images.unsplash.com/photo-1624099280987-1519591b0f25?w=400&auto=format&fit=crop');
+      --hero-image: url('assets/images/hero/hero-1600.jpg'); /* 1600×900 or 1920×1080 */
     }
   </style>
 </head>
@@ -49,6 +73,13 @@
     </div>
   </header>
 
+  <!--
+    HERO SECTION
+    • Background handled in CSS above. If you ever switch to an <img>, use:
+      - Source: /assets/images/hero/hero-1600.jpg
+      - srcset: 1280, 1600, 1920 widths
+      - Aspect: 16:9
+  -->
   <section class="hero">
     <div class="container content">
       <h1>Home Watch, Property Care, Remodeling & Emergency Services</h1>
@@ -56,7 +87,6 @@
     </div>
   </section>
 
-  
 <section id="services" aria-labelledby="services-h">
   <div class="container">
     <span class="pill">What we do</span>
@@ -64,147 +94,210 @@
     <p class="sub">Tap any card to open a detailed page. We document everything with photos and provide insurance ready reports.</p>
     <div class="services-grid">
 
-
-<a href="service-painting.html" class="card" aria-label="Interior & Exterior Painting">
-  <div class="media">
-    <img src="https://images.unsplash.com/photo-1630325459372-36f3f86281cf?q=80&w=735&auto=format&fit=crop" alt="Exterior painting project Fort Myers" />
-    <div class="overlay">Click for more info →</div>
-  </div>
-  <div class="body">
-    <span class="pill">Service</span>
-    <h3>Interior & Exterior Painting</h3>
-    <p>Professional prep, prime, and paint for homes and small commercial.</p>
-  </div>
-</a>
-
-<a href="service-renovations.html" class="card" aria-label="Renovations & Remodeling">
-  <div class="media">
-    <img src="https://images.unsplash.com/photo-1662394027253-dc37506c2587?w=400&auto=format&fit=crop" alt="Home Remodeling" />
-    <div class="overlay">Click for more info →</div>
-  </div>
-  <div class="body">
-    <span class="pill">Service</span>
-    <h3>Renovations & Remodeling</h3>
-    <p>Kitchen, bath, flooring, and additions with full oversight.</p>
-  </div>
-</a>
-
-      
-<a href="service-handyman.html" class="card" aria-label="Handyman Services">
-  <div class="media">
-    <img src="https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?w=400&auto=format&fit=crop" alt="Handyman services in Clearwater" />
-    <div class="overlay">Click for more info →</div>
-  </div>
-  <div class="body">
-    <span class="pill">Service</span>
-    <h3>Handyman Services</h3>
-    <p>Minor repairs, fixtures, drywall, and assemblies done right.</p>
-  </div>
-</a>
-
-<a href="service-modular.html" class="card" aria-label="Modular Home Repairs">
-  <div class="media">
-    <img src="https://images.unsplash.com/photo-1692133219792-2cf075603e65?w=400&auto=format&fit=crop" alt="Modular home repairs Gulf Coast" />
-    <div class="overlay">Click for more info →</div>
-  </div>
-  <div class="body">
-    <span class="pill">Service</span>
-    <h3>Modular Home Repairs</h3>
-    <p>Skirting, leveling, hurricane straps, and water damage fixes.</p>
-  </div>
-</a>
-
-<a href="service-emergency.html" class="card" aria-label="Emergency Services">
-  <div class="media">
-    <img src="https://images.unsplash.com/photo-1573871906629-f5c700caf507?w=400&auto=format&fit=crop" alt="Emergency services response" />
-    <div class="overlay">Click for more info →</div>
-  </div>
-  <div class="body">
-    <span class="pill" style="background:#fee2e2; color:#991b1b;">Emergency</span>
-    <h3>Emergency Services</h3>
-    <p>Rapid response for hurricane damage, flooding, and urgent repairs with insurance coordination.</p>
-  </div>
-</a>
-
-<a href="service-home-watch.html" class="card" aria-label="Home Watch Programs">
-  <div class="media">
-    <img src="https://images.unsplash.com/photo-1505521586751-90af6a8d5efa?q=80&w=1074&auto=format&fit=crop" alt="Home watch inspection in Sarasota County" />
-    <div class="overlay">Click for more info →</div>
-  </div>
-  <div class="body">
-    <span class="pill">Service</span>
-    <h3>Home Watch Programs</h3>
-    <p>Routine inspections, utility checks, and detailed reports for seasonal and absentee owners.</p>
-  </div>
-</a>
-      
-<a href="service-investment-monitoring.html" class="card" aria-label="Home Investment Monitoring">
-  <div class="media">
-    <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?w=400&auto=format&fit=crop" alt="Investment monitoring dashboard" />
-    <div class="overlay">Click for more info →</div>
-  </div>
-  <div class="body">
-    <span class="pill">Service</span>
-    <h3>Home Investment Monitoring</h3>
-    <p>ROI tracking, rental performance insights, and preventative maintenance oversight.</p>
-  </div>
-</a>
-
-<a href="service-hurricane-preparedness.html" class="card" aria-label="Hurricane Preparedness">
-  <div class="media">
-    <img src="https://images.unsplash.com/photo-1630260667842-830a17d12ec9?w=400&auto=format&fit=crop" alt="Hurricane shutters installation Fort Myers" />
-    <div class="overlay">Click for more info →</div>
-  </div>
-  <div class="body">
-    <span class="pill">Service</span>
-    <h3>Hurricane Preparedness</h3>
-    <p>Pre-storm documentation, shutter installation, and post-storm assessments for insurance support.</p>
-  </div>
-</a>
-
-<a href="service-disaster-recovery.html" class="card" aria-label="Disaster Recovery">
-  <div class="media">
-    <img src="https://images.unsplash.com/photo-1641648544039-969a5d6d5a02?w=400&auto=format&fit=crop" alt="Roof repair and disaster recovery Sarasota Florida" />
-    <div class="overlay">Click for more info →</div>
-  </div>
-  <div class="body">
-    <span class="pill">Service</span>
-    <h3>Disaster Recovery</h3>
-    <p>From water mitigation to full rebuild, we coordinate contractors and claims for complete restoration.</p>
-  </div>
-</a>
-
       <!--
-<a href="service-contractors.html" class="card" aria-label="Licensed Contractor Services">
-  <div class="media">
-    <img src="https://placehold.co/600x400?text=Licensed+Contractor+Services" alt="Licensed contractor repairs in Clearwater" />
-    <div class="overlay">Click for more info →</div>
-  </div>
-  <div class="body">
-    <span class="pill">Service</span>
-    <h3>Licensed Contractor Services</h3>
-    <p>Plumbing, electrical, roofing, and renovations — vetted, licensed professionals.</p>
-  </div>
-</a>
-  
+        SERVICE CARD IMAGE (Painting)
+        • Display target: ~350–400px wide card
+        • Provide 480, 800, 1200 widths (4:3 aspect)
+        • Path suggestion: /assets/images/services/painting-480.jpg etc.
+      -->
+      <a href="service-painting.html" class="card" aria-label="Interior & Exterior Painting">
+        <div class="media">
+          <img
+            src="assets/images/services/painting-800.jpg"
+            srcset="
+              assets/images/services/painting-480.jpg 480w,
+              assets/images/services/painting-800.jpg 800w,
+              assets/images/services/painting-1200.jpg 1200w"
+            sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 400px"
+            alt="Exterior painting project Fort Myers"
+            loading="lazy" decoding="async" />
+          <div class="overlay">Click for more info →</div>
+        </div>
+        <div class="body">
+          <span class="pill">Service</span>
+          <h3>Interior & Exterior Painting</h3>
+          <p>Professional prep, prime, and paint for homes and small commercial.</p>
+        </div>
+      </a>
 
-<a href="service-permitting.html" class="card" aria-label="Permitting & Compliance">
-  <div class="media">
-    <img src="https://placehold.co/600x400?text=Permitting+&+Compliance" alt="Permit documents and compliance Sarasota County" />
-    <div class="overlay">Click for more info →</div>
-  </div>
-  <div class="body">
-    <span class="pill">Service</span>
-    <h3>Permitting & Compliance</h3>
-    <p>We handle permits, inspections, and Florida Building Code compliance.</p>
-  </div>
-</a>
-           -->
+      <!-- Renovations card -->
+      <!-- 4:3 aspect, 480/800/1200 widths -->
+      <a href="service-renovations.html" class="card" aria-label="Renovations & Remodeling">
+        <div class="media">
+          <img
+            src="assets/images/services/renovations-800.jpg"
+            srcset="
+              assets/images/services/renovations-480.jpg 480w,
+              assets/images/services/renovations-800.jpg 800w,
+              assets/images/services/renovations-1200.jpg 1200w"
+            sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 400px"
+            alt="Home Remodeling"
+            loading="lazy" decoding="async" />
+          <div class="overlay">Click for more info →</div>
+        </div>
+        <div class="body">
+          <span class="pill">Service</span>
+          <h3>Renovations & Remodeling</h3>
+          <p>Kitchen, bath, flooring, and additions with full oversight.</p>
+        </div>
+      </a>
 
+      <!-- Handyman card -->
+      <!-- 4:3 aspect, 480/800/1200 widths -->
+      <a href="service-handyman.html" class="card" aria-label="Handyman Services">
+        <div class="media">
+          <img
+            src="assets/images/services/handyman-800.jpg"
+            srcset="
+              assets/images/services/handyman-480.jpg 480w,
+              assets/images/services/handyman-800.jpg 800w,
+              assets/images/services/handyman-1200.jpg 1200w"
+            sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 400px"
+            alt="Handyman services in Clearwater"
+            loading="lazy" decoding="async" />
+          <div class="overlay">Click for more info →</div>
+        </div>
+        <div class="body">
+          <span class="pill">Service</span>
+          <h3>Handyman Services</h3>
+          <p>Minor repairs, fixtures, drywall, and assemblies done right.</p>
+        </div>
+      </a>
 
+      <!-- Modular Repairs card -->
+      <!-- 4:3 aspect, 480/800/1200 widths -->
+      <a href="service-modular.html" class="card" aria-label="Modular Home Repairs">
+        <div class="media">
+          <img
+            src="assets/images/services/modular-800.jpg"
+            srcset="
+              assets/images/services/modular-480.jpg 480w,
+              assets/images/services/modular-800.jpg 800w,
+              assets/images/services/modular-1200.jpg 1200w"
+            sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 400px"
+            alt="Modular home repairs Gulf Coast"
+            loading="lazy" decoding="async" />
+          <div class="overlay">Click for more info →</div>
+        </div>
+        <div class="body">
+          <span class="pill">Service</span>
+          <h3>Modular Home Repairs</h3>
+          <p>Skirting, leveling, hurricane straps, and water damage fixes.</p>
+        </div>
+      </a>
 
+      <!-- Emergency Services card -->
+      <!-- 4:3 aspect, 480/800/1200 widths -->
+      <a href="service-emergency.html" class="card" aria-label="Emergency Services">
+        <div class="media">
+          <img
+            src="assets/images/services/emergency-800.jpg"
+            srcset="
+              assets/images/services/emergency-480.jpg 480w,
+              assets/images/services/emergency-800.jpg 800w,
+              assets/images/services/emergency-1200.jpg 1200w"
+            sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 400px"
+            alt="Emergency services response"
+            loading="lazy" decoding="async" />
+          <div class="overlay">Click for more info →</div>
+        </div>
+        <div class="body">
+          <span class="pill" style="background:#fee2e2; color:#991b1b;">Emergency</span>
+          <h3>Emergency Services</h3>
+          <p>Rapid response for hurricane damage, flooding, and urgent repairs with insurance coordination.</p>
+        </div>
+      </a>
 
-</div>
+      <!-- Home Watch card -->
+      <!-- 4:3 aspect, 480/800/1200 widths -->
+      <a href="service-home-watch.html" class="card" aria-label="Home Watch Programs">
+        <div class="media">
+          <img
+            src="assets/images/services/home-watch-800.jpg"
+            srcset="
+              assets/images/services/home-watch-480.jpg 480w,
+              assets/images/services/home-watch-800.jpg 800w,
+              assets/images/services/home-watch-1200.jpg 1200w"
+            sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 400px"
+            alt="Home watch inspection in Sarasota County"
+            loading="lazy" decoding="async" />
+          <div class="overlay">Click for more info →</div>
+        </div>
+        <div class="body">
+          <span class="pill">Service</span>
+          <h3>Home Watch Programs</h3>
+          <p>Routine inspections, utility checks, and detailed reports for seasonal and absentee owners.</p>
+        </div>
+      </a>
+
+      <!-- Investment Monitoring card -->
+      <!-- 4:3 aspect, 480/800/1200 widths -->
+      <a href="service-investment-monitoring.html" class="card" aria-label="Home Investment Monitoring">
+        <div class="media">
+          <img
+            src="assets/images/services/investment-800.jpg"
+            srcset="
+              assets/images/services/investment-480.jpg 480w,
+              assets/images/services/investment-800.jpg 800w,
+              assets/images/services/investment-1200.jpg 1200w"
+            sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 400px"
+            alt="Investment monitoring dashboard"
+            loading="lazy" decoding="async" />
+          <div class="overlay">Click for more info →</div>
+        </div>
+        <div class="body">
+          <span class="pill">Service</span>
+          <h3>Home Investment Monitoring</h3>
+          <p>ROI tracking, rental performance insights, and preventative maintenance oversight.</p>
+        </div>
+      </a>
+
+      <!-- Hurricane Preparedness card -->
+      <!-- 4:3 aspect, 480/800/1200 widths -->
+      <a href="service-hurricane-preparedness.html" class="card" aria-label="Hurricane Preparedness">
+        <div class="media">
+          <img
+            src="assets/images/services/hurricane-800.jpg"
+            srcset="
+              assets/images/services/hurricane-480.jpg 480w,
+              assets/images/services/hurricane-800.jpg 800w,
+              assets/images/services/hurricane-1200.jpg 1200w"
+            sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 400px"
+            alt="Hurricane shutters installation Fort Myers"
+            loading="lazy" decoding="async" />
+          <div class="overlay">Click for more info →</div>
+        </div>
+        <div class="body">
+          <span class="pill">Service</span>
+          <h3>Hurricane Preparedness</h3>
+          <p>Pre-storm documentation, shutter installation, and post-storm assessments for insurance support.</p>
+        </div>
+      </a>
+
+      <!-- Disaster Recovery card -->
+      <!-- 4:3 aspect, 480/800/1200 widths -->
+      <a href="service-disaster-recovery.html" class="card" aria-label="Disaster Recovery">
+        <div class="media">
+          <img
+            src="assets/images/services/disaster-800.jpg"
+            srcset="
+              assets/images/services/disaster-480.jpg 480w,
+              assets/images/services/disaster-800.jpg 800w,
+              assets/images/services/disaster-1200.jpg 1200w"
+            sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 400px"
+            alt="Roof repair and disaster recovery Sarasota Florida"
+            loading="lazy" decoding="async" />
+          <div class="overlay">Click for more info →</div>
+        </div>
+        <div class="body">
+          <span class="pill">Service</span>
+          <h3>Disaster Recovery</h3>
+          <p>From water mitigation to full rebuild, we coordinate contractors and claims for complete restoration.</p>
+        </div>
+      </a>
+
+      <!-- (Optional) Contractor/Permitting cards would use the same 4:3, 480/800/1200 scheme -->
+    </div>
   </div>
 </section>
 
@@ -212,20 +305,29 @@
   <div class="container">
     <h2 id="ba-h">Before & After Gallery</h2>
     <p class="sub">See transformations across roofing, painting, and hurricane remediation.</p>
+
+    <!--
+      BEFORE/AFTER SLIDER IMAGES
+      • Each pair must share same dimensions/aspect for a clean reveal
+      • Target: 16:9, provide 1280×720 and 1600×900 (export WebP/JPG)
+      • Paths: /assets/images/before-after/b1-before-1600.jpg, b1-after-1600.jpg, etc.
+    -->
     <div class="ba-grid">
       <div class="ba-box">
-        <img src="https://placehold.co/900x520?text=Before+1" alt="Before roof repair Sarasota">
-        <img src="https://placehold.co/900x520?text=After+1" alt="After roof repair Sarasota" class="ba-after">
+        <img src="assets/images/before-after/b1-before-1600.jpg" alt="Before roof repair Sarasota" loading="lazy" decoding="async">
+        <img src="assets/images/before-after/b1-after-1600.jpg" alt="After roof repair Sarasota" class="ba-after" loading="lazy" decoding="async">
         <input type="range" min="0" max="100" value="50" class="ba-slider" aria-label="Reveal after image">
       </div>
+
       <div class="ba-box">
-        <img src="https://placehold.co/900x520?text=Before+2" alt="Before exterior paint Fort Myers">
-        <img src="https://placehold.co/900x520?text=After+2" alt="After exterior paint Fort Myers" class="ba-after">
+        <img src="assets/images/before-after/b2-before-1600.jpg" alt="Before exterior paint Fort Myers" loading="lazy" decoding="async">
+        <img src="assets/images/before-after/b2-after-1600.jpg" alt="After exterior paint Fort Myers" class="ba-after" loading="lazy" decoding="async">
         <input type="range" min="0" max="100" value="50" class="ba-slider" aria-label="Reveal after image">
       </div>
+
       <div class="ba-box">
-        <img src="https://placehold.co/900x520?text=Before+3" alt="Before hurricane remediation Clearwater">
-        <img src="https://placehold.co/900x520?text=After+3" alt="After hurricane remediation Clearwater" class="ba-after">
+        <img src="assets/images/before-after/b3-before-1600.jpg" alt="Before hurricane remediation Clearwater" loading="lazy" decoding="async">
+        <img src="assets/images/before-after/b3-after-1600.jpg" alt="After hurricane remediation Clearwater" class="ba-after" loading="lazy" decoding="async">
         <input type="range" min="0" max="100" value="50" class="ba-slider" aria-label="Reveal after image">
       </div>
     </div>
@@ -236,23 +338,48 @@
   <div class="container">
     <h2 id="gallery-h">Project Gallery</h2>
     <p class="sub">Filter by service type and explore more work examples.</p>
+
+    <!--
+      GALLERY TILE IMAGES
+      • Target: 4:3 tiles
+      • Display ~250–350px column width → ship 400px and 800px variants
+      • Paths: /assets/images/gallery/interior-400.jpg, -800.jpg etc.
+    -->
     <div class="filters" style="display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.6rem;">
       <button class="btn btn-outline filter-btn" data-filter="all">All</button>
       <button class="btn btn-outline filter-btn" data-filter="interior">Interior</button>
       <button class="btn btn-outline filter-btn" data-filter="exterior">Exterior</button>
       <button class="btn btn-outline filter-btn" data-filter="painting">Painting</button>
     </div>
+
     <div class="gallery" id="galleryGrid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(250px,1fr)); gap:1rem; margin-top:1rem;">
       <figure data-cat="interior">
-        <img src="https://placehold.co/400x300?text=Interior" alt="Interior remodel Sarasota">
+        <img
+          src="assets/images/gallery/interior-800.jpg"
+          srcset="assets/images/gallery/interior-400.jpg 400w, assets/images/gallery/interior-800.jpg 800w"
+          sizes="(max-width: 640px) 100vw, 33vw"
+          alt="Interior remodel Sarasota"
+          loading="lazy" decoding="async">
         <figcaption>Interior remodel — Sarasota</figcaption>
       </figure>
+
       <figure data-cat="exterior">
-        <img src="https://placehold.co/400x300?text=Exterior" alt="Siding repair Clearwater">
+        <img
+          src="assets/images/gallery/exterior-800.jpg"
+          srcset="assets/images/gallery/exterior-400.jpg 400w, assets/images/gallery/exterior-800.jpg 800w"
+          sizes="(max-width: 640px) 100vw, 33vw"
+          alt="Siding repair Clearwater"
+          loading="lazy" decoding="async">
         <figcaption>Siding repair — Clearwater</figcaption>
       </figure>
+
       <figure data-cat="painting">
-        <img src="https://placehold.co/400x300?text=Painting" alt="Exterior paint Fort Myers">
+        <img
+          src="assets/images/gallery/painting-800.jpg"
+          srcset="assets/images/gallery/painting-400.jpg 400w, assets/images/gallery/painting-800.jpg 800w"
+          sizes="(max-width: 640px) 100vw, 33vw"
+          alt="Exterior paint Fort Myers"
+          loading="lazy" decoding="async">
         <figcaption>Exterior paint — Fort Myers</figcaption>
       </figure>
     </div>
@@ -263,25 +390,34 @@
   <div class="container">
     <h2 id="testimonials-h">What Our Clients Say</h2>
     <p class="sub">Real feedback from homeowners and investors along Florida’s Gulf Coast.</p>
+
+    <!--
+      TESTIMONIAL AVATARS
+      • Display: 60×60 on page
+      • Ship 120×120 (2×) WebP/PNG
+      • Paths: /assets/images/avatars/sarah-120.webp etc.
+    -->
     <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(280px,1fr)); gap:1rem; margin-top:1rem;">
       <figure style="background:#fff; padding:1rem; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.08);">
         <p>“Prepared our home for a hurricane and documented everything for insurance. Peace of mind.”</p>
         <figcaption style="display:flex; align-items:center; gap:.6rem; margin-top:.8rem;">
-          <img src="https://placehold.co/60x60" alt="Client photo" style="border-radius:50%;">
+          <img src="assets/images/avatars/sarah-120.webp" alt="Client photo" style="border-radius:50%;" loading="lazy" decoding="async">
           <div><strong>Sarah L.</strong><br><small>Sarasota Homeowner</small></div>
         </figcaption>
       </figure>
+
       <figure style="background:#fff; padding:1rem; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.08);">
         <p>“Coordinated contractors for a remodel in Clearwater — on time and under budget.”</p>
         <figcaption style="display:flex; align-items:center; gap:.6rem; margin-top:.8rem;">
-          <img src="https://placehold.co/60x60" alt="Client photo" style="border-radius:50%;">
+          <img src="assets/images/avatars/michael-120.webp" alt="Client photo" style="border-radius:50%;" loading="lazy" decoding="async">
           <div><strong>Michael D.</strong><br><small>Clearwater Investor</small></div>
         </figcaption>
       </figure>
+
       <figure style="background:#fff; padding:1rem; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.08);">
         <p>“Quick response after storm damage in Fort Myers. They handled insurance and repairs.”</p>
         <figcaption style="display:flex; align-items:center; gap:.6rem; margin-top:.8rem;">
-          <img src="https://placehold.co/60x60" alt="Client photo" style="border-radius:50%;">
+          <img src="assets/images/avatars/angela-120.webp" alt="Client photo" style="border-radius:50%;" loading="lazy" decoding="async">
           <div><strong>Angela R.</strong><br><small>Fort Myers Resident</small></div>
         </figcaption>
       </figure>
@@ -313,6 +449,7 @@
   <div class="container">
     <h2 id="reviews-h">What Clients Say on Google</h2>
     <p class="sub">We’re proud of our reputation. Share your experience or see what others say.</p>
+    <!-- No images here -->
     <a class="btn btn-outline" href="https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID" target="_blank" rel="noopener">Leave a Google Review</a>
   </div>
 </section>
@@ -320,12 +457,12 @@
 <section id="calendar" aria-labelledby="calendar-h">
   <div class="container">
     <h2 id="calendar-h">Availability Calendar</h2>
+    <!-- No images here (iframe) -->
     <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America/New_York"
       style="border:0; width:100%; height:600px;" frameborder="0" scrolling="no"
       title="Stingray Home Solutions Availability"></iframe>
   </div>
 </section>
-
 
   <footer>
     <div class="container footer-grid">
@@ -339,32 +476,33 @@
       </div>
     </div>
   </footer>
+
   <script>
+    // Dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-// Dynamic year
-document.getElementById('year').textContent = new Date().getFullYear();
-// Before/After slider logic — applies to all sliders on page
-document.querySelectorAll('.ba-box').forEach(function(box){
-  var slider = box.querySelector('.ba-slider');
-  var afterImg = box.querySelector('.ba-after');
-  if (slider && afterImg){
-    slider.addEventListener('input', function(){
-      afterImg.style.clipPath = 'inset(0 0 0 ' + (100 - slider.value) + '%)';
+    // Before/After slider logic — applies to all sliders on page
+    document.querySelectorAll('.ba-box').forEach(function(box){
+      var slider = box.querySelector('.ba-slider');
+      var afterImg = box.querySelector('.ba-after');
+      if (slider && afterImg){
+        slider.addEventListener('input', function(){
+          afterImg.style.clipPath = 'inset(0 0 0 ' + (100 - slider.value) + '%)';
+        });
+      }
     });
-  }
-});
-// Gallery filters (if present)
-var btns = document.querySelectorAll('.filter-btn');
-var figs = document.querySelectorAll('#galleryGrid figure');
-btns.forEach(function(btn){
-  btn.addEventListener('click', function(){
-    var f = btn.dataset.filter;
-    figs.forEach(function(el){
-      el.style.display = (f === 'all' || el.dataset.cat === f) ? '' : 'none';
-    });
-  });
-});
 
+    // Gallery filters (if present)
+    var btns = document.querySelectorAll('.filter-btn');
+    var figs = document.querySelectorAll('#galleryGrid figure');
+    btns.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var f = btn.dataset.filter;
+        figs.forEach(function(el){
+          el.style.display = (f === 'all' || el.dataset.cat === f) ? '' : 'none';
+        });
+      });
+    });
   </script>
 </body>
 </html>
