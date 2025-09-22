@@ -68,6 +68,10 @@
       .brand img { height: 48px; }
     }
   </style>
+  <style>
+  /* TEMP: Kill hero overlay to confirm it's the culprit */
+  .hero::before { content: none !important; }
+</style>
 </head>
 <body>
   <header>
