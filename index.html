@@ -25,30 +25,29 @@
 
   <!-- JSON-LD Business Info -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Stingray Home Solutions",
-  "url": "https://stingraysrq.com/",
-  "telephone": "305-393-9639",
-  "email": "Pkessinger@stingraysrq.com",
-  "areaServed": [
-    "Clearwater",
-    "Sarasota",
-    "Venice",
-    "Port Charlotte",
-    "Fort Myers"
-  ],
-  "description": "Emergency services, remodeling, painting, handyman, and more from Clearwater to Fort Myers.",
-  "image": "https://stingraysrq.com/assets/images/og/og-1200x630.jpg"
-}
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Stingray Home Solutions","url":"https://stingraysrq.com/","telephone":"305-393-9639","email":"Pkessinger@stingraysrq.com","areaServed":["Clearwater","Sarasota","Venice","Port Charlotte","Fort Myers"],"description":"Emergency services, remodeling, painting, handyman, and more from Clearwater to Fort Myers.","image":"https://stingraysrq.com/assets/images/og/og-1200x630.jpg"}
   </script>
 
   <style>
-    /* HERO BACKGROUND IMAGE */
-    .hero::before {
-      --hero-image: url('assets/images/hero/hero-1600.jpg'); /* 1600×900, 1920×1080 variants available */
+    /* SAFE hero background */
+    .hero { 
+      position: relative; 
+      min-height: 46vh; 
+      display: grid; 
+      align-items: center; 
     }
+    .hero::before {
+      content:"";
+      position:absolute; inset:0;
+      background-image: var(--hero-image);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1;                 /* sits behind content */
+      pointer-events: none;
+      opacity: .28;                /* soften background */
+    }
+    :root { --hero-image: url('assets/images/hero/hero-1600.jpg'); }
 
     /* Brand logo styling */
     .brand {
@@ -68,15 +67,11 @@
       .brand img { height: 48px; }
     }
   </style>
-  <style>
-  /* TEMP: Kill hero overlay to confirm it's the culprit */
-  .hero::before { content: none !important; }
-</style>
 </head>
 <body>
   <header>
     <div class="container nav">
-      <!-- Updated brand link with logo -->
+      <!-- Logo + text brand -->
       <a class="brand" href="index.html" aria-label="Stingray Home Solutions — Home">
         <img src="assets/images/logo/logo-256.png"
              srcset="assets/images/logo/logo-128.png 128w,
@@ -88,15 +83,68 @@
              loading="eager" decoding="async">
         <span>Stingray Home Solutions</span>
       </a>
-
       <nav>
         <a href="index.html#services">Services</a>
         <a href="index.html#contact-form">Contact</a>
       </nav>
     </div>
   </header>
-  
-  <!-- ... rest of your content unchanged ... -->
 
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container content">
+      <h1>Home Watch, Property Care, Remodeling & Emergency Services</h1>
+      <p class="lead">From home watch to rebuild, we protect your property and documentation across the Gulf Coast with photo logs and clear communication. Call 305-393-9639.</p>
+    </div>
+  </section>
+
+  <!-- Your existing sections (Services, Before/After, Gallery, Testimonials, Contact, Reviews, Calendar) go here.
+       No functional changes — just drop this header/hero block in place of your previous one. -->
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <!-- Logo in footer as well -->
+        <a class="brand" href="index.html">
+          <img src="assets/images/logo/logo-128.png" alt="Stingray Home Solutions logo" width="128" height="128" loading="lazy" decoding="async">
+          <span>Stingray Home Solutions</span>
+        </a>
+        <br />
+        <small>Hurricane Preparedness • Property Care • Disaster Recovery</small><br />
+        <small>Serving Clearwater, Sarasota, Venice, Port Charlotte, and Fort Myers • © <span id="year"></span></small>
+      </div>
+      <div>
+        <a href="tel:+13053939639">305-393-9639</a> • <a href="mailto:Pkessinger@stingraysrq.com">Pkessinger@stingraysrq.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Before/After slider logic
+    document.querySelectorAll('.ba-box').forEach(function(box){
+      var slider = box.querySelector('.ba-slider');
+      var afterImg = box.querySelector('.ba-after');
+      if (slider && afterImg){
+        slider.addEventListener('input', function(){
+          afterImg.style.clipPath = 'inset(0 0 0 ' + (100 - slider.value) + '%)';
+        });
+      }
+    });
+
+    // Gallery filters
+    var btns = document.querySelectorAll('.filter-btn');
+    var figs = document.querySelectorAll('#galleryGrid figure');
+    btns.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var f = btn.dataset.filter;
+        figs.forEach(function(el){
+          el.style.display = (f === 'all' || el.dataset.cat === f) ? '' : 'none';
+        });
+      });
+    });
+  </script>
 </body>
 </html>
